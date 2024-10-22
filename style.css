@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e6ff;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid #673ab7;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.animated-title {
+    font-size: 2.5em;
+    color: #673ab7;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.message {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.photo-gallery img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.animate-button {
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.animate-button:hover {
+    background-color: #5e35b1;
+}
+
+#love-message {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #d50000;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
